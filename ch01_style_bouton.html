@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>boutons</title>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<style type="text/css">
+	body{
+		margin:5px;
+	}
+	h1:before{
+		content:"#";
+	}
+	h1,a{
+		font-family:'Oxygen', sans-serif;
+		font-weight:300;
+	}
+	.btn-button{
+		display:block;
+		width:100px;
+		line-height: 35px;
+		background-color:#2ba6cb;
+		color:#fff;
+		border:none;
+		border-radius:4px;
+		padding:5px;
+		
+	}
+	.btn-button-form{
+		background: linear-gradient(bottom, #236303, #43B60A);
+		background: -moz-linear-gradient(bottom, #236303, #43B60A);
+		background: -webkit-linear-gradient(bottom, #236303, #43B60A);
+		text-shadow:1px 1px 1px #000;
+		box-shadow: 0 2px 2px #999;
+
+	}
+	.btn-button-form:before{
+		content:url(1402412852_settings-24.png);
+		vertical-align: -4px;
+		margin-right:3px;
+		opacity:0.6;
+		width:100px;
+		line-height: 30px;
+		text-align:center;
+	}
+	
+
+		a.btn{
+			display:block;/*inline*/
+			width:91px;
+			height: 18px;
+			background-color:#2ba6cb;
+			text-align: center;
+			color:#fff;
+			font-family: sans-serif;
+			text-decoration: none;
+			padding:14px 28px 14px 28px;
+			transition-duration:0.5s;
+			/*border:solid 1px #007295;*/
+		}
+		a.btn:hover{
+			background-color: #007295;
+		}
+		a.btn-alert{
+			border:solid: 1px solid #CF280E;
+			background-color:#F04124;
+			
+			
+		}
+		
+		a.btn-alert:hover{
+			background-color: #CF280E;
+		}
+		a.btn-event{
+			border:solid: 1px solid #FFD100;
+			background-color:#FFF1AF;
+		
+			
+		}
+		a.btn-event:hover{
+			background-color: #FFD100;
+		}
+		a.btn-form{
+			border:solid: 1px solid #FFD100;
+			background-color:#79DF45;
+			font-family: sans-serif;
+			
+		}
+		a.btn-form:hover{
+			background-color: #3AAF00;
+		}
+		a.btn-rond{
+			border-radius:5px;
+			
+	}
+		
+		
+	</style>
+</head>
+<body>
+<h1>Bibliothèque de style boutons <small>CSS<sub>3</sub></small></h1>
+<p>
+	<a href="#" class="btn">Normal</a>
+</p>
+<p>
+	<a href="#" class="btn btn-alert">Alert</a>
+</p>
+<p>
+	<a href="#" class="btn btn-event">Event</a>
+</p>
+<p>
+	<a href="#" class="btn btn-form btn-rond">Form</a>
+</p>
+<p>
+	<button class="btn-button" id="btn">Primary</button>
+	</p>
+<p>
+	<button class="btn-button btn-button-form">Sign-in</button>
+	</p>
+	<script type="text/javascript">
+		function myUrl(){
+			document.location.href="http://www.google.com";
+		}
+		var btn=document.getElementById("btn");
+		btn.addEventListener('click',myUrl);
+		
+	</script>
+</body>
+</html>
