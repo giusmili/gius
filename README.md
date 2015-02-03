@@ -1,1 +1,1 @@
-# gius mise à dispositions de structure css
+# gius mise à disposition de structures css
